@@ -18,7 +18,9 @@ RUN exec $SHELL && \
     ~/.rbenv/bin/rbenv global 2.4.0 && \
     ~/.rbenv/shims/gem install jekyll && \
     ~/.rbenv/shims/gem install jekyll-paginate && \
-    ~/.rbenv/shims/gem install nokogiri
+    ~/.rbenv/shims/gem install nokogiri && \
+    ~/.rbenv/shims/gem install fastimage && \
+    ~/.rbenv/shims/gem install octopress-minify-html
 
 # Define mountable directories.
 VOLUME ["/var/site-content", "/var/building-scripts"]
