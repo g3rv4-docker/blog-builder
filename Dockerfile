@@ -24,7 +24,7 @@ RUN exec $SHELL && \
 
 # Define mountable directories.
 VOLUME ["/var/site-content", "/var/building-scripts"]
-
+EXPOSE 4000
 WORKDIR /var/site-content
 
 CMD ["/root/.rbenv/shims/jekyll","build"]
