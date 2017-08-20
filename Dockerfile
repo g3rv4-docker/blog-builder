@@ -23,6 +23,7 @@ RUN exec $SHELL && \
     ~/.rbenv/shims/gem install octopress-minify-html
 
 # Define mountable directories.
-VOLUME ["/var/building-scripts", "/var/site-destination"]
+VOLUME ["/var/site-content"]
+WORKDIR /var/site-content
 
 CMD ["/root/.rbenv/shims/jekyll","build"]
